@@ -292,7 +292,13 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--text-col);
 text-align: center;
+margin-bottom: 8px;
 
+}
+.team-icon-list {
+    display: flex;
+        justify-content: center;
+        gap: 24px;
 }
 /*Section Customers styles*/
 .customers-sections {
@@ -349,6 +355,12 @@ padding-top: 100px;
 padding-bottom: 100px;
 background-color: var(--main-dark-col);
 }
+.footer-container {
+display: flex;
+}
+.container-logo {
+    margin-right: 120px;
+}
 .footer-logo {
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -399,9 +411,9 @@ width: 208px;
 }
 
 .icon-footer-list {
-    display: flex;
-        align-items: flex-start;
-        gap: 16px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
 }
 
 .icon-footer-item {
@@ -422,7 +434,7 @@ width: 208px;
 .link {}
 
 .social-footer-icon {
-    
+
 }
 /*Section portfolio styles*/
 .main-portfolio {}

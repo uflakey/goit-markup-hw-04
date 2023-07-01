@@ -94,6 +94,7 @@ background-color: var(--whit-title-col)
 }
 .header-item {}
 .header-link {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -101,12 +102,22 @@ background-color: var(--whit-title-col)
     color: var(--main-dark-col);
     padding-top: 24px;
     padding-bottom: 24px;
-
 }
-.header-link:hover{
+.header-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ocean, #404BBF);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.header-link:hover {
 color: #404BBF;
 }
-.header-link:focus{
+.header-link:focus {
     color: #404BBF;
 
 }
@@ -141,7 +152,8 @@ font-style: normal;
     padding-top: 188px;
     padding-bottom: 188px;
     background-color: var(--main-dark-col);
-    background-image: url(../imagess/bghero.jpg);
+    background-image: linear-gradient (rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
+        url(../imagess/bghero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -205,6 +217,22 @@ font-style: normal;
 }
 .business-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
+    
+}
+.container-icon-business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: var(--team-bg-col)
+        
+}
+.business-icon {
+
 }
 .business-item-title {
     margin-bottom: 8px;

@@ -13,7 +13,7 @@
 body{
 font-family: Roboto, sans-serif;
 color: #434455;
-background-color: var(--whit-title-col)
+background-color: var(--whit-title-col);
 
   }
   /*Reset*/
@@ -235,7 +235,7 @@ font-style: normal;
         height: 112px;
         flex-shrink: 0;
         border-radius: 4px;
-        background: var(--team-bg-col)
+        background: var(--team-bg-col);
         
 }
 .business-icon {
@@ -680,11 +680,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
-.modal-battom {
-    position: absolute;
+.modal-buttom {
+position: absolute;
     top: 24px;
     right: 24px;
     height: 24px;
+    width: 24px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -693,6 +694,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .modal-battom:hover {
     background-color: #404bbf;

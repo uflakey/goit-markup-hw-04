@@ -122,6 +122,10 @@ background-color: var(--whit-title-col);
     left: 0;
     bottom: -1px;
 }
+
+.active {
+    color: #404BBF;
+}
 .header-link:hover {
 color: #404BBF;
 }
@@ -416,7 +420,7 @@ border-color: #404BBF;
 .customers-icon {
 fill: currentColor;
 }
-.customers-link:hover .customers-icon {
+.customers-link:hover {
 fill: #404BBF;
 }
 
